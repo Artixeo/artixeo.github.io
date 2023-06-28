@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ARTIXEO</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Resetowanie stylów dla wszystkich elementów */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Stylowanie body */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #aaaaaa; /* Szare tło */
+    }
+    /* Dodatkowy styl dla opisu */
+    .description {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    /* Stylowanie nagłówka */
+    header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Stylowanie menu po lewej stronie */
+    nav {
+      background-color: #666666;
+      color: #ffffff;
+      padding: 20px;
+      width: 200px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow-y: auto;
+      border-radius: 0 10px 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-bottom: 10px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Stylowanie głównej treści strony */
+    .content {
+      margin: 20px auto; /* Centrowanie */
+      padding: 20px;
+      transition: margin-left 0.3s;
+      background-color: #ffffff; /* Szary tło */
+      outline: 1px solid #cccccc; /* Szary outline */
+      border-radius: 10px; /* Zaokrąglenia */
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <h1>ARTIXEO</h1>
+    </header>
+  
+    <nav>
+      <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#">O nas</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  
+    <div class="content">
+      <h2>Witaj na stronie</h2>
+      <p>Jestem młodym programistą i Geokeszerem urodzonym w 2010 roku. Kocham kodowanie i tworzenie różnych projektów. Tutaj możesz znaleźć moje portfolio oraz dowiedzieć się więcej o mnie. Zapraszam do zapoznania się z moimi pracami!</p>
+    </div>
+  
+    <div class="content">
+      <h2>Serwer MineCraft 1.19.4</h2>
+      <p>Serwer Minecraft w wersji 1.19.4. Obecnie dostępne są dwa tryby:</p>
+      <ul>
+        <li>SURVIVAL: Zwykły minecraft</li>
+        <li>BEDWARS: Minigierka 1v1v1v1</li>
+      </ul>
+      <p>Tymczasowo przeniesiono na IP:</p>
+      <h2>mc.artixeo.pl</h2>
+    </div>
+  
+    <script>
+      // Płynne przesuwanie treści po kliknięciu w link w menu
+      const links = document.querySelectorAll('nav a');
+      links.forEach(link => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+  </body>  
+</html>

@@ -1,0 +1,72 @@
+/* style.css */
+
+/* Resetowanie stylów dla wszystkich elementów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stylowanie body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #aaaaaa; /* Szare tło */
+  }
+  
+  /* Stylowanie nagłówka */
+  header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Stylowanie menu po lewej stronie */
+  nav {
+    background-color: #666666;
+    color: #ffffff;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Stylowanie głównej treści strony */
+  .content {
+    margin: 20px auto; /* Centrowanie */
+    padding: 20px;
+    transition: margin-left 0.3s;
+    background-color: #333333; /* Kolor tła jak nagłówek */
+    outline: 1px solid #333333; /* Szary outline */
+    border-radius: 10px; /* Zaokrąglenia */
+    width: 75%; /* Szerokość 75% */
+  }  
+  
+  
+  /* Płynne przesuwanie treści po kliknięciu w link w menu */
+  nav a {
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff0000; /* Zmiana koloru na najechanie */
+  }
+  
