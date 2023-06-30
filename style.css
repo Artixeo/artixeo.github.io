@@ -1,76 +1,76 @@
-/* Resetowanie styli dla elementów HTML */
-html, body, ul {
+/* style.css */
+
+/* Resetowanie domyślnych stylów */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Stylowanie nagłówka */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #4CAF50;
   padding: 20px;
   text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-header h1 {
-  font-size: 24px;
+h1 {
+  color: #fff;
 }
 
-/* Stylowanie nawigacji */
 nav {
-  background-color: #007bff;
-  padding: 10px;
+  background-color: #333;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 10px 0;
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #f2f2f2;
-}
-
-/* Stylowanie treści */
 .content {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.content h2 {
-  font-size: 20px;
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  line-height: 1.5;
+}
+
+ul {
   margin-bottom: 10px;
 }
 
-.content p {
-  margin-bottom: 10px;
+ul li {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-.content ul {
-  margin-bottom: 10px;
-}
-
-/* Stylowanie linków w treści */
-.content a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.content a:hover {
-  color: #0056b3;
+ul li:last-child {
+  margin-bottom: 0;
 }
